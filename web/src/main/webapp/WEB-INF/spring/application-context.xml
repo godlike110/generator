@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
+
+	<description>Spring公共配置</description>
+
+
+	<aop:aspectj-autoproxy />
+	
+
+	
+	<!-- 线程执行器配置，用于任务注册 -->
+<bean id="cronExecutor" class="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor">
+ <property name="corePoolSize" value="10" />
+ <property name="maxPoolSize" value="20" />
+ <property name="queueCapacity" value="20" />
+</bean>	
+<bean id="busCheckTask" class="com.md.idgenerator.server.task.NewBusCheckTask"/>
+
+<!-- 调度业务 -->
+<bean id="checkJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+ <property name="targetObject" ref="busCheckTask" />
+ <property name="targetMethod" value="doCheck" />
+</bean>
+
+
+
+<bean id="checkBusTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+ <property name="jobDetail" ref="checkJobDetail" />
+ <property name="startDelay" value="10000" />
+ <property name="repeatInterval" value="600000" />
+</bean>
+
+<!-- 设置调度 -->
+<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+ <property name="triggers">
+  <list>
+   <ref bean="checkBusTrigger" />
+  </list>
+ </property>
+ <property name="taskExecutor" ref="cronExecutor" />
+</bean>
+
+
+
+
+
+	<!-- MyBatis配置 -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- 自动扫描entity目录, 省掉Configuration.xml里的手工配置 -->
+		<property name="configLocation" value="classpath:mybatis-config.xml"/>
+		<property name="typeAliasesPackage" value="com.md.idgenerator.server.bean.entry" />
+		<!-- 显式指定Mapper文件位置 -->
+		<property name="mapperLocations" value="classpath:/mybatis/*Mapper.xml" />
+	</bean>
+
+	<!-- 扫描basePackage下所有以@MyBatisRepository标识的 接口 -->
+	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.md.idgenerator.server.dal.dao" />
+		<property name="annotationClass" value="com.md.idgenerator.server.dal.dao.MyBatisRepository" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean>
+
+	<!-- 事务管理器配置, 单数据源事务 -->
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
+		p:dataSource-ref="dataSource" />
+
+	<!-- 使用annotation定义事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager"
+		proxy-target-class="true" />
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		destroy-method="close">
+		<property name="url" value="jdbc:mysql://119.254.111.162:3306/test" />
+		<property name="username" value="mdsh" />
+		<property name="password" value="Jiayou2015"/>
+
+		<property name="filters" value="stat" />
+
+		<property name="maxActive" value="20" />
+		<property name="initialSize" value="1" />
+		<property name="maxWait" value="60000" />
+		<property name="minIdle" value="1" />
+
+		<property name="timeBetweenEvictionRunsMillis" value="60000" />
+		<property name="minEvictableIdleTimeMillis" value="300000" />
+
+		<property name="validationQuery" value="SELECT 'x'" />
+		<property name="testWhileIdle" value="true" />
+		<property name="testOnBorrow" value="false" />
+		<property name="testOnReturn" value="false" />
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="20" />
+	</bean>
+
+</beans>	

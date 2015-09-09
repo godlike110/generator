@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.md.demo.server.dal.dao.TestDAO">
+	<!-- 根据account_id和account_type查询一条完整的映射信息 -->
+	<select id="selectTest" resultType="TestMap">
+		SELECT
+			id,text
+		FROM
+			test
+		WHERE
+			id=#{id}
+	</select>
+</mapper>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.md.idgenerator.server.dal.dao.IdGeneratorDao">
+	<!-- 查看所有业务线当前id生成状况 -->
+	<select id="getGenerators" resultType="IdGenerator">
+		SELECT id,type,bus_key as busKey,milestone,create_time as createTime,update_time as updateTime,name FROM id_generator
+	</select>
+	
+		<!-- 查看某个业务id生成状况 -->
+	<select id="getGenerator" resultType="IdGenerator" parameterType="string">
+		SELECT id,type,bus_key as busKey,milestone,create_time as createTime,update_time as updateTime,name FROM id_generator where type = #{type}
+	</select>
+	
+	<!-- 插入一条新的业务 -->
+	<insert id="insertIdGenerator" parameterType="IdGenerator" useGeneratedKeys="true" keyProperty="id">  
+        insert into id_generator(type,bus_key,milestone,create_time,update_time,name) values(#{type},#{busKey},#{milestone},#{createTime},#{updateTime},#{name})  
+    </insert>
+    <!-- 更新id生成记录 -->
+     <update id="updateIdGenerator" parameterType="IdGenerator">  
+        update id_generator set type = #{type},bus_key = #{busKey},milestone = #{milestone},create_time=#{createTime},update_time=#{updateTime},name=#{name} where id = #{id}  
+    </update> 
+</mapper>

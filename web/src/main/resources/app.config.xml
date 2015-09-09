@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appconfig>
+	
+      <test>
+		<url>http://www.baidu.com/dev</url>		
+      </test>
+      
+      <ip>
+      	<list>fdsfsd10.86.145.204;127.0.0.1</list>
+      </ip>
+      
+      <queue>
+        <size>500</size>
+        <minsize>200</minsize>
+      </queue>
+	
+</appconfig>

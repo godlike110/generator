@@ -1,0 +1,25 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+        <modelVersion>4.0.0</modelVersion>
+	<artifactId>idgenerator.api</artifactId>
+        <groupId>com.md.idgenerator</groupId>
+        <version>1.0</version>
+        <packaging>jar</packaging>   
+        <name>id-api</name>
+        <dependencies>
+        </dependencies> 
+
+        <distributionManagement>
+                <repository>
+                        <id>mdsh</id>
+                        <url>http://192.168.11.111:8081/nexus/content/repositories/releases/</url>
+                </repository>
+                <snapshotRepository>
+                        <id>mdsh</id>
+                        <url>http://192.168.11.111:8081/nexus/content/repositories/snapshots/</url>
+                </snapshotRepository>
+
+        </distributionManagement>
+
+</project>

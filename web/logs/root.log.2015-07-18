@@ -1,0 +1,1280 @@
+2015-07-18 14:51:07.735  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 14:51:07.906  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 14:51:08.080  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5ceccc52: startup date [Sat Jul 18 14:51:08 CST 2015]; root of context hierarchy
+2015-07-18 14:51:08.446  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:08.449  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:08.620  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.253  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.254  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.266  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'idGeneratorDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.282  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'idGeneratorDao' of type [class com.sun.proxy.$Proxy17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.285  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'generatorServiceImpl' of type [class com.md.idgenerator.server.service.impl.GeneratorServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.294  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:09.402  INFO o.s.b.f.s.DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fe43cbb: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration,idGeneratorDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-07-18 14:51:09.419  INFO o.s.s.c.ThreadPoolTaskExecutor:154 - Initializing ExecutorService  'cronExecutor'
+2015-07-18 14:51:09.513  INFO o.q.c.SchedulerSignalerImpl:60 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-07-18 14:51:09.515  INFO o.q.c.QuartzScheduler:222 - Quartz Scheduler v.1.8.4 created.
+2015-07-18 14:51:09.517  INFO o.q.s.RAMJobStore:139 - RAMJobStore initialized.
+2015-07-18 14:51:09.518  INFO o.q.c.QuartzScheduler:244 - Scheduler meta-data: Quartz Scheduler (v1.8.4) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.springframework.scheduling.quartz.LocalTaskExecutorThreadPool' - with -1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2015-07-18 14:51:09.519  INFO o.q.i.StdSchedulerFactory:1280 - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2015-07-18 14:51:09.519  INFO o.q.i.StdSchedulerFactory:1284 - Quartz scheduler version: 1.8.4
+2015-07-18 14:51:09.521  INFO o.q.c.QuartzScheduler:2246 - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@27d65826
+2015-07-18 14:51:09.562  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MIN_QUEUE_SIZE value :50
+2015-07-18 14:51:09.563  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:QUEUE_SIZE value :100
+2015-07-18 14:51:09.564  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MILESTONE_STEP value :100
+2015-07-18 14:51:09.638  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator(int,java.lang.String)
+2015-07-18 14:51:09.638  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator()
+2015-07-18 14:51:09.639  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidinsert],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.insertIdGennerator()
+2015-07-18 14:51:09.640  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidsingle],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGenneratorOne(int)
+2015-07-18 14:51:09.640  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/updateid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.updateIdGenerator(int,long)
+2015-07-18 14:51:09.641  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getsize],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getQueueSize()
+2015-07-18 14:51:09.642  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/createId],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.createIdGennerator(int,java.lang.String)
+2015-07-18 14:51:09.890  INFO o.s.w.s.h.SimpleUrlHandlerMapping:302 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-07-18 14:51:09.899  INFO o.s.c.s.DefaultLifecycleProcessor:334 - Starting beans in phase 2147483647
+2015-07-18 14:51:09.900  INFO o.s.s.q.SchedulerFactoryBean:648 - Starting Quartz Scheduler now
+2015-07-18 14:51:09.900  INFO o.q.c.QuartzScheduler:500 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2015-07-18 14:51:09.902  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:83 - start init app configs
+2015-07-18 14:51:10.026  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_ORDER
+2015-07-18 14:51:10.042  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_ORDER
+2015-07-18 14:51:10.052  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_ORDER is 21234567978145
+2015-07-18 14:51:10.060  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_ORDER sucess,now milestone is 21234567978245
+2015-07-18 14:51:10.071  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_ORDER success
+2015-07-18 14:51:10.072  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_TOB
+2015-07-18 14:51:10.078  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_TOB
+2015-07-18 14:51:10.084  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_TOB is 1074100
+2015-07-18 14:51:10.089  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_TOB sucess,now milestone is 1074200
+2015-07-18 14:51:10.097  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_TOB success
+2015-07-18 14:51:10.098  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi
+2015-07-18 14:51:10.101  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi
+2015-07-18 14:51:10.108  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi is 234571312
+2015-07-18 14:51:10.113  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi sucess,now milestone is 234571412
+2015-07-18 14:51:10.122  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi success
+2015-07-18 14:51:10.122  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi1
+2015-07-18 14:51:10.125  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi1
+2015-07-18 14:51:10.130  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi1 is 2345663623
+2015-07-18 14:51:10.135  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi1 sucess,now milestone is 2345663723
+2015-07-18 14:51:10.144  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi1 success
+2015-07-18 14:51:10.144  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi2
+2015-07-18 14:51:10.148  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi2
+2015-07-18 14:51:10.153  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi2 is 2345663423
+2015-07-18 14:51:10.160  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi2 sucess,now milestone is 2345663523
+2015-07-18 14:51:10.172  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi2 success
+2015-07-18 14:51:10.173  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi3
+2015-07-18 14:51:10.176  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi3
+2015-07-18 14:51:10.186  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi3 is 2345663423
+2015-07-18 14:51:10.191  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi3 sucess,now milestone is 2345663523
+2015-07-18 14:51:10.200  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi3 success
+2015-07-18 14:51:10.201  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi4
+2015-07-18 14:51:10.204  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi4
+2015-07-18 14:51:10.209  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi4 is 23456583931
+2015-07-18 14:51:10.214  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi4 sucess,now milestone is 23456584031
+2015-07-18 14:51:10.223  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi4 success
+2015-07-18 14:51:10.223  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi5
+2015-07-18 14:51:10.226  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi5
+2015-07-18 14:51:10.231  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi5 is 234565814013
+2015-07-18 14:51:10.236  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi5 sucess,now milestone is 234565814113
+2015-07-18 14:51:10.245  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi5 success
+2015-07-18 14:51:10.246  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi6
+2015-07-18 14:51:10.249  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi6
+2015-07-18 14:51:10.254  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi6 is 2346754
+2015-07-18 14:51:10.259  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi6 sucess,now milestone is 2346854
+2015-07-18 14:51:10.268  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi6 success
+2015-07-18 14:51:10.268  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi7
+2015-07-18 14:51:10.272  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi7
+2015-07-18 14:51:10.278  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi7 is 23457044
+2015-07-18 14:51:10.282  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi7 sucess,now milestone is 23457144
+2015-07-18 14:51:10.290  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi7 success
+2015-07-18 14:51:10.291  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:121 - total num of bus is : 10
+2015-07-18 14:51:10.541  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:123 - finished init app configs,tokenmap:{1:"MDF34jetorderHHD",2:"MDshF3676hefgvveegD",3:"MDSH24545sfsagatRG",4:"MDSH245dgrfeeratRG",5:"MDSH245dgrfehsdfgfatRG",6:"MDSH2dgrfehsdfgrefatRG",7:"MDSH245dgrfehsdfgfatRGI",8:"MDSH245dgrfehsdfgfatRGIU",9:"MDSH245dgrfehsdfgEFGE",10:"MDSH245dgrfehsdfgEFGEgh"},bus_name_map:{1:"MDSH_ORDER",2:"MDSH_TOB",3:"ceshi",4:"ceshi1",5:"ceshi2",6:"ceshi3",7:"ceshi4",8:"ceshi5",9:"ceshi6",10:"ceshi7"}
+2015-07-18 14:51:10.552  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=null
+2015-07-18 14:51:10.553  INFO c.m.i.s.s.i.IdCreatorFactory:41 - error create id, the key is null.type:1
+2015-07-18 14:51:10.554  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 2
+2015-07-18 14:51:10.604  INFO c.m.i.t.CreateidTest:47 - getidnokey result : {"code":1,"msg":"秘钥验证失败.","timestamp":1437202270}
+2015-07-18 14:51:10.604  INFO c.m.i.t.CreateidTest:49 - getidnokey test  success!
+2015-07-18 14:51:10.608  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1000,key=Dgegsegetsgdsetes
+2015-07-18 14:51:10.608  INFO c.m.i.s.s.i.IdCreatorFactory:35 - error bus type in createId,type:1000
+2015-07-18 14:51:10.609  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 1
+2015-07-18 14:51:10.609  INFO c.m.i.t.CreateidTest:37 - getidNoType test result: {"code":2,"msg":"没有对应业务","timestamp":1437202270}
+2015-07-18 14:51:10.610  INFO c.m.i.t.CreateidTest:39 - getidNoType test sucess!
+2015-07-18 14:51:10.611  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=fsgsadteagadsge
+2015-07-18 14:51:10.611  INFO c.m.i.s.s.i.IdCreatorFactory:41 - error create id, the key is null.type:1
+2015-07-18 14:51:10.611  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 0
+2015-07-18 14:51:10.613  INFO c.m.i.t.CreateidTest:57 - getidkeyWrong result : {"code":1,"msg":"秘钥验证失败.","timestamp":1437202270}
+2015-07-18 14:51:10.613  INFO c.m.i.t.CreateidTest:59 - getidkeyWrong test sucess!
+2015-07-18 14:51:10.615  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=MDF34jetorderHHD
+2015-07-18 14:51:10.616  INFO c.m.i.s.s.i.GeneratorServiceImpl:68 - start create id ,busType : MDSH_ORDER
+2015-07-18 14:51:10.622  INFO c.m.i.s.s.i.GeneratorServiceImpl:86 - create id success! idinfo : {"id":21234567978146,"mileStone":21234567978245,"size":99}
+2015-07-18 14:51:10.623  INFO c.m.i.s.s.i.IdGeneratorServiceImpl:58 - getnextid success,idinfo : {"id":21234567978146,"mileStone":21234567978245,"size":99},usetime:8
+2015-07-18 14:51:10.623  INFO c.m.i.s.s.i.IdCreatorFactory:47 - create Id success,infos:{"id":21234567978146,"mileStone":21234567978245,"size":99}
+2015-07-18 14:51:10.624  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 9
+2015-07-18 14:51:10.624  INFO c.m.i.t.CreateidTest:26 - getidSucess test result:{"code":0,"data":{"id":21234567978146,"mileStone":21234567978245,"size":99},"msg":"成功","timestamp":1437202270}
+2015-07-18 14:51:10.624  INFO c.m.i.t.CreateidTest:28 - getidsucess test sucess!
+2015-07-18 14:51:10.626  INFO c.m.i.t.CreateidTest:64 - systemErr test sucess!
+2015-07-18 14:51:10.629  INFO o.s.c.s.GenericApplicationContext:1042 - Closing org.springframework.context.support.GenericApplicationContext@5ceccc52: startup date [Sat Jul 18 14:51:08 CST 2015]; root of context hierarchy
+2015-07-18 14:51:10.631  INFO o.s.c.s.DefaultLifecycleProcessor:349 - Stopping beans in phase 2147483647
+2015-07-18 14:51:10.633  INFO o.q.c.QuartzScheduler:537 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2015-07-18 14:51:10.633  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1fe43cbb: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration,idGeneratorDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-07-18 14:51:10.639  INFO o.s.s.q.SchedulerFactoryBean:758 - Shutting down Quartz Scheduler
+2015-07-18 14:51:10.639  INFO o.q.c.QuartzScheduler:616 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2015-07-18 14:51:10.640  INFO o.q.c.QuartzScheduler:537 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2015-07-18 14:51:10.640  INFO o.q.c.QuartzScheduler:686 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2015-07-18 14:51:10.641  INFO o.s.s.c.ThreadPoolTaskExecutor:191 - Shutting down ExecutorService 'cronExecutor'
+2015-07-18 14:51:36.245  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 14:51:36.300  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 14:51:36 CST 2015]; root of context hierarchy
+2015-07-18 14:51:36.338  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 14:51:36.627  INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:140 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-07-18 14:51:36.666  INFO o.s.b.f.s.DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@250a2017: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,idGeneratorDao,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor]; root of factory hierarchy
+2015-07-18 14:51:36.714  INFO o.s.s.c.ThreadPoolTaskExecutor:154 - Initializing ExecutorService  'cronExecutor'
+2015-07-18 14:51:36.809  INFO o.q.c.SchedulerSignalerImpl:60 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-07-18 14:51:36.811  INFO o.q.c.QuartzScheduler:222 - Quartz Scheduler v.1.8.4 created.
+2015-07-18 14:51:36.812  INFO o.q.s.RAMJobStore:139 - RAMJobStore initialized.
+2015-07-18 14:51:36.813  INFO o.q.c.QuartzScheduler:244 - Scheduler meta-data: Quartz Scheduler (v1.8.4) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.springframework.scheduling.quartz.LocalTaskExecutorThreadPool' - with -1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2015-07-18 14:51:36.814  INFO o.q.i.StdSchedulerFactory:1280 - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2015-07-18 14:51:36.814  INFO o.q.i.StdSchedulerFactory:1284 - Quartz scheduler version: 1.8.4
+2015-07-18 14:51:36.815  INFO o.q.c.QuartzScheduler:2246 - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@31fe8bf8
+2015-07-18 14:51:37.754  INFO o.s.c.s.DefaultLifecycleProcessor:334 - Starting beans in phase 2147483647
+2015-07-18 14:51:37.754  INFO o.s.s.q.SchedulerFactoryBean:648 - Starting Quartz Scheduler now
+2015-07-18 14:51:37.755  INFO o.q.c.QuartzScheduler:500 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2015-07-18 14:51:37.758  INFO o.s.w.c.ContextLoader:313 - Root WebApplicationContext: initialization completed in 1510 ms
+2015-07-18 14:51:37.805  INFO o.s.w.s.DispatcherServlet:454 - FrameworkServlet 'springmvc': initialization started
+2015-07-18 14:51:37.808  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing WebApplicationContext for namespace 'springmvc-servlet': startup date [Sat Jul 18 14:51:37 CST 2015]; parent: Root WebApplicationContext
+2015-07-18 14:51:37.810  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/spring-mvc.xml]
+2015-07-18 14:51:37.861  INFO o.s.c.a.ClassPathBeanDefinitionScanner:222 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2015-07-18 14:51:37.862  INFO o.s.c.a.ClassPathBeanDefinitionScanner:230 - JSR-330 'javax.inject.Named' annotation found and supported for component scanning
+2015-07-18 14:51:38.039  INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor:140 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2015-07-18 14:51:38.064  INFO o.s.w.c.s.XmlWebApplicationContext:1374 - Bean 'generatorServiceImpl' of type [class com.md.idgenerator.server.service.impl.GeneratorServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 14:51:38.069  INFO o.s.b.f.s.DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@544077c2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@250a2017
+2015-07-18 14:51:38.096  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MIN_QUEUE_SIZE value :200
+2015-07-18 14:51:38.096  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:QUEUE_SIZE value :500
+2015-07-18 14:51:38.097  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MILESTONE_STEP value :500
+2015-07-18 14:51:38.163  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/updateid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.updateIdGenerator(int,long)
+2015-07-18 14:51:38.163  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator()
+2015-07-18 14:51:38.164  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator(int,java.lang.String)
+2015-07-18 14:51:38.164  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidinsert],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.insertIdGennerator()
+2015-07-18 14:51:38.165  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidsingle],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGenneratorOne(int)
+2015-07-18 14:51:38.165  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getsize],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getQueueSize()
+2015-07-18 14:51:38.166  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/createId],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.createIdGennerator(int,java.lang.String)
+2015-07-18 14:51:38.427  INFO o.s.w.s.h.SimpleUrlHandlerMapping:302 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-07-18 14:51:38.449  INFO o.q.u.UpdateChecker:86 - New Quartz update(s) found: 1.8.5 [http://www.terracotta.org/kit/reflector?kitID=default&pageID=QuartzChangeLog]
+2015-07-18 14:51:38.454  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:83 - start init app configs
+2015-07-18 14:51:38.543  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_ORDER
+2015-07-18 14:51:38.545  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_ORDER
+2015-07-18 14:51:38.553  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_ORDER is 21234567978245
+2015-07-18 14:51:38.562  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_ORDER sucess,now milestone is 21234567978745
+2015-07-18 14:51:38.566  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_ORDER success
+2015-07-18 14:51:38.566  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_TOB
+2015-07-18 14:51:38.566  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_TOB
+2015-07-18 14:51:38.571  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_TOB is 1074200
+2015-07-18 14:51:38.578  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_TOB sucess,now milestone is 1074700
+2015-07-18 14:51:38.579  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_TOB success
+2015-07-18 14:51:38.580  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi
+2015-07-18 14:51:38.580  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi
+2015-07-18 14:51:38.586  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi is 234571412
+2015-07-18 14:51:38.595  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi sucess,now milestone is 234571912
+2015-07-18 14:51:38.596  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi success
+2015-07-18 14:51:38.596  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi1
+2015-07-18 14:51:38.597  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi1
+2015-07-18 14:51:38.602  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi1 is 2345663723
+2015-07-18 14:51:38.609  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi1 sucess,now milestone is 2345664223
+2015-07-18 14:51:38.610  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi1 success
+2015-07-18 14:51:38.611  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi2
+2015-07-18 14:51:38.612  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi2
+2015-07-18 14:51:38.618  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi2 is 2345663523
+2015-07-18 14:51:38.624  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi2 sucess,now milestone is 2345664023
+2015-07-18 14:51:38.626  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi2 success
+2015-07-18 14:51:38.626  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi3
+2015-07-18 14:51:38.626  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi3
+2015-07-18 14:51:38.633  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi3 is 2345663523
+2015-07-18 14:51:38.641  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi3 sucess,now milestone is 2345664023
+2015-07-18 14:51:38.642  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi3 success
+2015-07-18 14:51:38.643  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi4
+2015-07-18 14:51:38.643  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi4
+2015-07-18 14:51:38.648  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi4 is 23456584031
+2015-07-18 14:51:38.655  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi4 sucess,now milestone is 23456584531
+2015-07-18 14:51:38.656  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi4 success
+2015-07-18 14:51:38.656  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi5
+2015-07-18 14:51:38.656  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi5
+2015-07-18 14:51:38.662  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi5 is 234565814113
+2015-07-18 14:51:38.669  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi5 sucess,now milestone is 234565814613
+2015-07-18 14:51:38.670  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi5 success
+2015-07-18 14:51:38.671  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi6
+2015-07-18 14:51:38.671  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi6
+2015-07-18 14:51:38.678  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi6 is 2346854
+2015-07-18 14:51:38.685  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi6 sucess,now milestone is 2347354
+2015-07-18 14:51:38.686  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi6 success
+2015-07-18 14:51:38.686  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi7
+2015-07-18 14:51:38.687  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi7
+2015-07-18 14:51:38.693  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi7 is 23457144
+2015-07-18 14:51:38.699  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi7 sucess,now milestone is 23457644
+2015-07-18 14:51:38.700  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi7 success
+2015-07-18 14:51:38.701  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:121 - total num of bus is : 10
+2015-07-18 14:51:38.926  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:123 - finished init app configs,tokenmap:{1:"MDF34jetorderHHD",2:"MDshF3676hefgvveegD",3:"MDSH24545sfsagatRG",4:"MDSH245dgrfeeratRG",5:"MDSH245dgrfehsdfgfatRG",6:"MDSH2dgrfehsdfgrefatRG",7:"MDSH245dgrfehsdfgfatRGI",8:"MDSH245dgrfehsdfgfatRGIU",9:"MDSH245dgrfehsdfgEFGE",10:"MDSH245dgrfehsdfgEFGEgh"},bus_name_map:{1:"MDSH_ORDER",2:"MDSH_TOB",3:"ceshi",4:"ceshi1",5:"ceshi2",6:"ceshi3",7:"ceshi4",8:"ceshi5",9:"ceshi6",10:"ceshi7"}
+2015-07-18 14:51:38.927  INFO o.s.w.s.DispatcherServlet:473 - FrameworkServlet 'springmvc': initialization completed in 1122 ms
+2015-07-18 14:51:46.775  INFO c.m.i.s.t.NewBusCheckTask:30 - start to check businesses in db!
+2015-07-18 14:51:46.785  INFO c.m.i.s.t.NewBusCheckTask:69 - check new business task done succes,new business num is 10
+2015-07-18 15:01:46.763  INFO c.m.i.s.t.NewBusCheckTask:30 - start to check businesses in db!
+2015-07-18 15:01:46.777  INFO c.m.i.s.t.NewBusCheckTask:69 - check new business task done succes,new business num is 10
+2015-07-18 17:52:33.872  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 17:52:34.054  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 17:52:34.258  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5ceccc52: startup date [Sat Jul 18 17:52:34 CST 2015]; root of context hierarchy
+2015-07-18 17:52:34.635  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:34.638  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:34.810  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'dataSource' of type [class com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.684  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'sqlSessionFactory' of type [class org.mybatis.spring.SqlSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.686  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'sqlSessionFactory' of type [class org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.697  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'idGeneratorDao' of type [class org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.714  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'idGeneratorDao' of type [class com.sun.proxy.$Proxy17] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.717  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'generatorServiceImpl' of type [class com.md.idgenerator.server.service.impl.GeneratorServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.727  INFO o.s.c.s.GenericApplicationContext:1374 - Bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' of type [class org.springframework.transaction.interceptor.TransactionInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2015-07-18 17:52:36.833  INFO o.s.b.f.s.DefaultListableBeanFactory:596 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d645296: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration,idGeneratorDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-07-18 17:52:36.846  INFO o.s.s.c.ThreadPoolTaskExecutor:154 - Initializing ExecutorService  'cronExecutor'
+2015-07-18 17:52:36.940  INFO o.q.c.SchedulerSignalerImpl:60 - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2015-07-18 17:52:36.942  INFO o.q.c.QuartzScheduler:222 - Quartz Scheduler v.1.8.4 created.
+2015-07-18 17:52:36.944  INFO o.q.s.RAMJobStore:139 - RAMJobStore initialized.
+2015-07-18 17:52:36.945  INFO o.q.c.QuartzScheduler:244 - Scheduler meta-data: Quartz Scheduler (v1.8.4) 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.springframework.scheduling.quartz.LocalTaskExecutorThreadPool' - with -1 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2015-07-18 17:52:36.946  INFO o.q.i.StdSchedulerFactory:1280 - Quartz scheduler 'org.springframework.scheduling.quartz.SchedulerFactoryBean#0' initialized from an externally provided properties instance.
+2015-07-18 17:52:36.946  INFO o.q.i.StdSchedulerFactory:1284 - Quartz scheduler version: 1.8.4
+2015-07-18 17:52:36.948  INFO o.q.c.QuartzScheduler:2246 - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@292e2c90
+2015-07-18 17:52:36.991  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MIN_QUEUE_SIZE value :50
+2015-07-18 17:52:36.991  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:QUEUE_SIZE value :100
+2015-07-18 17:52:36.992  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:72 - set field:MILESTONE_STEP value :100
+2015-07-18 17:52:37.066  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator(int,java.lang.String)
+2015-07-18 17:52:37.067  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGennerator()
+2015-07-18 17:52:37.068  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidinsert],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.insertIdGennerator()
+2015-07-18 17:52:37.068  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/genidsingle],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getIdGenneratorOne(int)
+2015-07-18 17:52:37.069  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/updateid],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.updateIdGenerator(int,long)
+2015-07-18 17:52:37.070  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/getsize],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.getQueueSize()
+2015-07-18 17:52:37.071  INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping:185 - Mapped "{[/createId],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.md.idgenerator.server.web.IdGeneratorController.createIdGennerator(int,java.lang.String)
+2015-07-18 17:52:37.320  INFO o.s.w.s.h.SimpleUrlHandlerMapping:302 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2015-07-18 17:52:37.329  INFO o.s.c.s.DefaultLifecycleProcessor:334 - Starting beans in phase 2147483647
+2015-07-18 17:52:37.329  INFO o.s.s.q.SchedulerFactoryBean:648 - Starting Quartz Scheduler now
+2015-07-18 17:52:37.330  INFO o.q.c.QuartzScheduler:500 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED started.
+2015-07-18 17:52:37.331  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:83 - start init app configs
+2015-07-18 17:52:37.534  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_ORDER
+2015-07-18 17:52:37.551  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_ORDER
+2015-07-18 17:52:37.574  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_ORDER is 21234567978745
+2015-07-18 17:52:37.589  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_ORDER sucess,now milestone is 21234567978845
+2015-07-18 17:52:37.604  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_ORDER success
+2015-07-18 17:52:37.604  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :MDSH_TOB
+2015-07-18 17:52:37.608  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : MDSH_TOB
+2015-07-18 17:52:37.614  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : MDSH_TOB is 1074700
+2015-07-18 17:52:37.622  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : MDSH_TOB sucess,now milestone is 1074800
+2015-07-18 17:52:37.633  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : MDSH_TOB success
+2015-07-18 17:52:37.634  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi
+2015-07-18 17:52:37.643  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi
+2015-07-18 17:52:37.650  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi is 234571912
+2015-07-18 17:52:37.657  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi sucess,now milestone is 234572012
+2015-07-18 17:52:37.674  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi success
+2015-07-18 17:52:37.675  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi1
+2015-07-18 17:52:37.680  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi1
+2015-07-18 17:52:37.686  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi1 is 2345664223
+2015-07-18 17:52:37.692  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi1 sucess,now milestone is 2345664323
+2015-07-18 17:52:37.706  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi1 success
+2015-07-18 17:52:37.707  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi2
+2015-07-18 17:52:37.712  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi2
+2015-07-18 17:52:37.722  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi2 is 2345664023
+2015-07-18 17:52:37.730  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi2 sucess,now milestone is 2345664123
+2015-07-18 17:52:37.748  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi2 success
+2015-07-18 17:52:37.749  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi3
+2015-07-18 17:52:37.760  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi3
+2015-07-18 17:52:37.773  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi3 is 2345664023
+2015-07-18 17:52:37.781  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi3 sucess,now milestone is 2345664123
+2015-07-18 17:52:37.815  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi3 success
+2015-07-18 17:52:37.816  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi4
+2015-07-18 17:52:37.820  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi4
+2015-07-18 17:52:37.833  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi4 is 23456584531
+2015-07-18 17:52:37.840  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi4 sucess,now milestone is 23456584631
+2015-07-18 17:52:37.851  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi4 success
+2015-07-18 17:52:37.852  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi5
+2015-07-18 17:52:37.856  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi5
+2015-07-18 17:52:37.863  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi5 is 234565814613
+2015-07-18 17:52:37.875  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi5 sucess,now milestone is 234565814713
+2015-07-18 17:52:37.895  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi5 success
+2015-07-18 17:52:37.896  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi6
+2015-07-18 17:52:37.903  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi6
+2015-07-18 17:52:37.909  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi6 is 2347354
+2015-07-18 17:52:37.920  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi6 sucess,now milestone is 2347454
+2015-07-18 17:52:37.931  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi6 success
+2015-07-18 17:52:37.932  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:95 - start init queue :ceshi7
+2015-07-18 17:52:37.938  INFO c.m.i.s.s.i.GeneratorServiceImpl:136 - start set new milestone of busType : ceshi7
+2015-07-18 17:52:37.944  INFO c.m.i.s.s.i.GeneratorServiceImpl:145 - current milestone of busType : ceshi7 is 23457644
+2015-07-18 17:52:37.954  INFO c.m.i.s.s.i.GeneratorServiceImpl:153 - update milestone of busType : ceshi7 sucess,now milestone is 23457744
+2015-07-18 17:52:37.966  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:119 - init queu : ceshi7 success
+2015-07-18 17:52:37.967  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:121 - total num of bus is : 10
+2015-07-18 17:52:38.214  INFO c.m.i.s.i.ConfigAnnotationBeanPostProcessor:123 - finished init app configs,tokenmap:{1:"MDF34jetorderHHD",2:"MDshF3676hefgvveegD",3:"MDSH24545sfsagatRG",4:"MDSH245dgrfeeratRG",5:"MDSH245dgrfehsdfgfatRG",6:"MDSH2dgrfehsdfgrefatRG",7:"MDSH245dgrfehsdfgfatRGI",8:"MDSH245dgrfehsdfgfatRGIU",9:"MDSH245dgrfehsdfgEFGE",10:"MDSH245dgrfehsdfgEFGEgh"},bus_name_map:{1:"MDSH_ORDER",2:"MDSH_TOB",3:"ceshi",4:"ceshi1",5:"ceshi2",6:"ceshi3",7:"ceshi4",8:"ceshi5",9:"ceshi6",10:"ceshi7"}
+2015-07-18 17:52:38.224  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=null
+2015-07-18 17:52:38.224  INFO c.m.i.s.s.i.IdCreatorFactory:41 - error create id, the key is null.type:1
+2015-07-18 17:52:38.225  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 1
+2015-07-18 17:52:38.269  INFO c.m.i.t.CreateidTest:47 - getidnokey result : {"code":1,"msg":"秘钥验证失败.","timestamp":1437213158}
+2015-07-18 17:52:38.270  INFO c.m.i.t.CreateidTest:49 - getidnokey test  success!
+2015-07-18 17:52:38.273  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1000,key=Dgegsegetsgdsetes
+2015-07-18 17:52:38.273  INFO c.m.i.s.s.i.IdCreatorFactory:35 - error bus type in createId,type:1000
+2015-07-18 17:52:38.274  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 1
+2015-07-18 17:52:38.274  INFO c.m.i.t.CreateidTest:37 - getidNoType test result: {"code":2,"msg":"没有对应业务","timestamp":1437213158}
+2015-07-18 17:52:38.274  INFO c.m.i.t.CreateidTest:39 - getidNoType test sucess!
+2015-07-18 17:52:38.276  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=fsgsadteagadsge
+2015-07-18 17:52:38.276  INFO c.m.i.s.s.i.IdCreatorFactory:41 - error create id, the key is null.type:1
+2015-07-18 17:52:38.276  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 0
+2015-07-18 17:52:38.277  INFO c.m.i.t.CreateidTest:57 - getidkeyWrong result : {"code":1,"msg":"秘钥验证失败.","timestamp":1437213158}
+2015-07-18 17:52:38.278  INFO c.m.i.t.CreateidTest:59 - getidkeyWrong test sucess!
+2015-07-18 17:52:38.279  INFO c.m.i.s.s.i.IdCreatorFactory:29 - params:type=1,key=MDF34jetorderHHD
+2015-07-18 17:52:38.280  INFO c.m.i.s.s.i.GeneratorServiceImpl:68 - start create id ,busType : MDSH_ORDER
+2015-07-18 17:52:38.284  INFO c.m.i.s.s.i.GeneratorServiceImpl:86 - create id success! idinfo : {"id":21234567978746,"mileStone":21234567978845,"size":99}
+2015-07-18 17:52:38.284  INFO c.m.i.s.s.i.IdGeneratorServiceImpl:58 - getnextid success,idinfo : {"id":21234567978746,"mileStone":21234567978845,"size":99},usetime:4
+2015-07-18 17:52:38.284  INFO c.m.i.s.s.i.IdCreatorFactory:47 - create Id success,infos:{"id":21234567978746,"mileStone":21234567978845,"size":99}
+2015-07-18 17:52:38.285  INFO c.m.i.s.s.i.IdCreatorFactory:56 - createid cost time : 6
+2015-07-18 17:52:38.285  INFO c.m.i.t.CreateidTest:26 - getidSucess test result:{"code":0,"data":{"id":21234567978746,"mileStone":21234567978845,"size":99},"msg":"成功","timestamp":1437213158}
+2015-07-18 17:52:38.285  INFO c.m.i.t.CreateidTest:28 - getidsucess test sucess!
+2015-07-18 17:52:38.286  INFO c.m.i.t.CreateidTest:64 - systemErr test sucess!
+2015-07-18 17:52:38.289  INFO o.s.c.s.GenericApplicationContext:1042 - Closing org.springframework.context.support.GenericApplicationContext@5ceccc52: startup date [Sat Jul 18 17:52:34 CST 2015]; root of context hierarchy
+2015-07-18 17:52:38.291  INFO o.s.c.s.DefaultLifecycleProcessor:349 - Stopping beans in phase 2147483647
+2015-07-18 17:52:38.292  INFO o.q.c.QuartzScheduler:537 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2015-07-18 17:52:38.293  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2d645296: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration,idGeneratorDao,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+2015-07-18 17:52:38.299  INFO o.s.s.q.SchedulerFactoryBean:758 - Shutting down Quartz Scheduler
+2015-07-18 17:52:38.300  INFO o.q.c.QuartzScheduler:616 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutting down.
+2015-07-18 17:52:38.300  INFO o.q.c.QuartzScheduler:537 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED paused.
+2015-07-18 17:52:38.300  INFO o.q.c.QuartzScheduler:686 - Scheduler org.springframework.scheduling.quartz.SchedulerFactoryBean#0_$_NON_CLUSTERED shutdown complete.
+2015-07-18 17:52:38.301  INFO o.s.s.c.ThreadPoolTaskExecutor:191 - Shutting down ExecutorService 'cronExecutor'
+2015-07-18 17:56:04.210  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 17:56:04.265  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 17:56:04 CST 2015]; root of context hierarchy
+2015-07-18 17:56:04.304  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 17:56:04.463  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-dubbo.xml]
+2015-07-18 17:56:04.567  WARN o.s.b.f.x.XmlBeanDefinitionReader:47 - Ignored XML validation warning
+org.xml.sax.SAXParseException: schema_reference.4: 无法读取方案文档 'http://code.alibabatech.com/schema/dubbo/dubbo.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:433) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:347) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4166) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4157) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2490) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2187) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:573) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2453) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1772) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:766) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:356) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2786) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) [na:1.7.0_79]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197) [maven-embedder-3.3.3.jar:3.3.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.2.jar:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[na:1.7.0_79]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.7.0_79]
+	at java.net.Socket.connect(Socket.java:579) ~[na:1.7.0_79]
+	at java.net.Socket.connect(Socket.java:528) ~[na:1.7.0_79]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:643) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2175) [na:1.7.0_79]
+	... 73 common frames omitted
+2015-07-18 17:56:04.573 ERROR o.s.w.c.ContextLoader:319 - Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 8 in XML document from ServletContext resource [/WEB-INF/spring/application-dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 88; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197) [maven-embedder-3.3.3.jar:3.3.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.2.jar:na]
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:458) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3237) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1917) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:766) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:356) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2786) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) ~[na:1.7.0_79]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 56 common frames omitted
+2015-07-18 17:58:24.764  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 17:58:24.818  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 17:58:24 CST 2015]; root of context hierarchy
+2015-07-18 17:58:24.866  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 17:58:25.020  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-dubbo.xml]
+2015-07-18 17:58:25.095  WARN o.s.b.f.x.XmlBeanDefinitionReader:47 - Ignored XML validation warning
+org.xml.sax.SAXParseException: schema_reference.4: 无法读取方案文档 'http://code.alibabatech.com/schema/dubbo/dubbo.xsd', 原因为 1) 无法找到文档; 2) 无法读取文档; 3) 文档的根元素不是 <xsd:schema>。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.warning(ErrorHandlerWrapper.java:99) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:433) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:347) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaErr(XSDHandler.java:4166) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.reportSchemaWarning(XSDHandler.java:4157) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument1(XSDHandler.java:2490) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2187) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.parseSchema(XSDHandler.java:573) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaLoader.loadSchema(XMLSchemaLoader.java:617) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.findSchemaGrammar(XMLSchemaValidator.java:2453) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1772) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:766) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:356) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2786) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) [na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) [na:1.7.0_79]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197) [maven-embedder-3.3.3.jar:3.3.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.2.jar:na]
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200) ~[na:1.7.0_79]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182) ~[na:1.7.0_79]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.7.0_79]
+	at java.net.Socket.connect(Socket.java:579) ~[na:1.7.0_79]
+	at java.net.Socket.connect(Socket.java:528) ~[na:1.7.0_79]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:180) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:211) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:308) ~[na:1.7.0_79]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:326) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:997) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:933) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:851) ~[na:1.7.0_79]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1301) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLEntityManager.setupCurrentEntity(XMLEntityManager.java:643) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLVersionDetector.determineDocVersion(XMLVersionDetector.java:189) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:582) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaParsingConfig.parse(SchemaParsingConfig.java:685) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser.parse(SchemaDOMParser.java:530) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler.getSchemaDocument(XSDHandler.java:2175) [na:1.7.0_79]
+	... 73 common frames omitted
+2015-07-18 17:58:25.100 ERROR o.s.w.c.ContextLoader:319 - Context initialization failed
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 9 in XML document from ServletContext resource [/WEB-INF/spring/application-dubbo.xml] is invalid; nested exception is org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 88; cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106) [maven-core-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286) [maven-embedder-3.3.3.jar:3.3.3]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197) [maven-embedder-3.3.3.jar:3.3.3]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.2.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.2.jar:na]
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.c: 通配符的匹配很全面, 但无法找到元素 'dubbo:application' 的声明。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:198) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:134) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:437) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:325) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:458) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3237) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1917) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.emptyElement(XMLSchemaValidator.java:766) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:356) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2786) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:243) ~[na:1.7.0_79]
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:347) ~[na:1.7.0_79]
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388) ~[spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 56 common frames omitted
+2015-07-18 18:01:58.469  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 18:01:58.634  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 18:01:58.806  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@6a2831fa: startup date [Sat Jul 18 18:01:58 CST 2015]; root of context hierarchy
+2015-07-18 18:01:58.879  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3cf28f60: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration]; root of factory hierarchy
+2015-07-18 18:01:58.888 ERROR o.s.t.c.TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3f1d023f] to prepare test instance [com.md.idgenerator.test.CreateidTest@97e9678]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in class path resource [application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 31 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.CachedIntrospectionResults.<clinit>(CachedIntrospectionResults.java:95) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 45 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.SpringProperties
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:366) ~[na:1.7.0_79]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355) ~[na:1.7.0_79]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.7.0_79]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354) ~[na:1.7.0_79]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425) ~[na:1.7.0_79]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308) ~[na:1.7.0_79]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358) ~[na:1.7.0_79]
+	... 52 common frames omitted
+2015-07-18 18:01:58.897  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 18:01:58.957  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 18:01:59.031  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@9d2f333: startup date [Sat Jul 18 18:01:59 CST 2015]; root of context hierarchy
+2015-07-18 18:01:59.036  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4b6bf659: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration]; root of factory hierarchy
+2015-07-18 18:01:59.038 ERROR o.s.t.c.TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3f1d023f] to prepare test instance [com.md.idgenerator.test.CreateidTest@1cfa73be]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in class path resource [application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 31 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 45 common frames omitted
+2015-07-18 18:01:59.042  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 18:01:59.095  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 18:01:59.157  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@6d245e86: startup date [Sat Jul 18 18:01:59 CST 2015]; root of context hierarchy
+2015-07-18 18:01:59.162  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5d69b59e: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration]; root of factory hierarchy
+2015-07-18 18:01:59.164 ERROR o.s.t.c.TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3f1d023f] to prepare test instance [com.md.idgenerator.test.CreateidTest@4712c7fb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in class path resource [application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 31 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 45 common frames omitted
+2015-07-18 18:01:59.169  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 18:01:59.214  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 18:01:59.277  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@6d849d1b: startup date [Sat Jul 18 18:01:59 CST 2015]; root of context hierarchy
+2015-07-18 18:01:59.282  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@22536cc0: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration]; root of factory hierarchy
+2015-07-18 18:01:59.284 ERROR o.s.t.c.TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3f1d023f] to prepare test instance [com.md.idgenerator.test.CreateidTest@1308c2db]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in class path resource [application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 31 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 45 common frames omitted
+2015-07-18 18:01:59.288  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [application-context.xml]
+2015-07-18 18:01:59.331  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2015-07-18 18:01:59.387  INFO o.s.c.s.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@7424206b: startup date [Sat Jul 18 18:01:59 CST 2015]; root of context hierarchy
+2015-07-18 18:01:59.392  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@73d7d107: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,configAnnotationBeanPostProcessor,idGeneratorController,generatorServiceImpl,idCreatorFactory,idGeneratorServiceImpl,aptConstants,mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.view.InternalResourceViewResolver#0,org.springframework.web.servlet.config.viewControllerHandlerMapping,stringHttpMessageConverter,PropertyPlaceholderConfigurer,appConfiguration]; root of factory hierarchy
+2015-07-18 18:01:59.394 ERROR o.s.t.c.TestContextManager:314 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@3f1d023f] to prepare test instance [com.md.idgenerator.test.CreateidTest@5ddc5dfb]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:122) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:105) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:74) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:312) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141) [surefire-junit4-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112) [surefire-junit4-2.12.4.jar:2.12.4]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189) [surefire-api-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115) [surefire-booter-2.12.4.jar:2.12.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75) [surefire-booter-2.12.4.jar:2.12.4]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in class path resource [application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:120) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91) ~[spring-test-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	... 31 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class org.springframework.beans.CachedIntrospectionResults
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 45 common frames omitted
+2015-07-18 18:04:28.924  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 18:04:28.973  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 18:04:28 CST 2015]; root of context hierarchy
+2015-07-18 18:04:29.011  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 18:04:29.169  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-dubbo.xml]
+2015-07-18 18:04:29.307  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2eab2af8: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,mdsh-idgerator,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.md.idgenerator.server.service.IdFactory,idFactory]; root of factory hierarchy
+2015-07-18 18:04:29.313 ERROR o.s.w.c.ContextLoader:319 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in ServletContext resource [/WEB-INF/spring/application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584) [maven-embedder-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213) [maven-embedder-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157) [maven-embedder-3.2.1.jar:3.2.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.1.jar:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.CachedIntrospectionResults.<clinit>(CachedIntrospectionResults.java:95) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 53 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.SpringProperties
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:259) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:235) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:227) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383) ~[na:na]
+	... 60 common frames omitted
+2015-07-18 18:06:46.848  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 18:06:46.900  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 18:06:46 CST 2015]; root of context hierarchy
+2015-07-18 18:06:46.936  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 18:06:47.023  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-dubbo.xml]
+2015-07-18 18:06:47.162  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17928353: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,mdsh-idgerator,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.md.idgenerator.server.service.IdFactory,idFactory]; root of factory hierarchy
+2015-07-18 18:06:47.167 ERROR o.s.w.c.ContextLoader:319 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in ServletContext resource [/WEB-INF/spring/application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.restartWebApp(JettyRunMojo.java:435) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo$1.filesChanged(JettyRunMojo.java:394) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.Scanner.reportBulkChanges(Scanner.java:691) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.Scanner.reportDifferences(Scanner.java:551) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.Scanner.scan(Scanner.java:403) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.Scanner$1.run(Scanner.java:353) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at java.util.TimerThread.mainLoop(Timer.java:555) [na:1.7.0_79]
+	at java.util.TimerThread.run(Timer.java:505) [na:1.7.0_79]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.CachedIntrospectionResults.<clinit>(CachedIntrospectionResults.java:95) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.SpringProperties
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:259) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:235) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:227) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383) ~[na:na]
+	... 35 common frames omitted
+2015-07-18 18:08:29.059  INFO o.s.w.c.ContextLoader:273 - Root WebApplicationContext: initialization started
+2015-07-18 18:08:29.108  INFO o.s.w.c.s.XmlWebApplicationContext:510 - Refreshing Root WebApplicationContext: startup date [Sat Jul 18 18:08:29 CST 2015]; root of context hierarchy
+2015-07-18 18:08:29.145  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-context.xml]
+2015-07-18 18:08:29.302  INFO o.s.b.f.x.XmlBeanDefinitionReader:315 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring/application-dubbo.xml]
+2015-07-18 18:08:29.449  INFO o.s.b.f.s.DefaultListableBeanFactory:444 - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6dd01943: defining beans [org.springframework.aop.config.internalAutoProxyCreator,cronExecutor,busCheckTask,checkJobDetail,checkBusTrigger,org.springframework.scheduling.quartz.SchedulerFactoryBean#0,sqlSessionFactory,org.mybatis.spring.mapper.MapperScannerConfigurer#0,transactionManager,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,dataSource,mdsh-idgerator,com.alibaba.dubbo.config.RegistryConfig,dubbo,com.md.idgenerator.server.service.IdFactory,idFactory]; root of factory hierarchy
+2015-07-18 18:08:29.455 ERROR o.s.w.c.ContextLoader:319 - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.mybatis.spring.mapper.MapperScannerConfigurer#0' defined in ServletContext resource [/WEB-INF/spring/application-context.xml]: Initialization of bean failed; nested exception is java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:296) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:293) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:198) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:441) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:624) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461) ~[spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:389) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:294) ~[spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112) [spring-web-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:782) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:424) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:774) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:249) [jetty-servlet-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1242) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:717) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:494) [jetty-webapp-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:298) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:172) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerCollection.doStart(HandlerCollection.java:229) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:282) [jetty-server-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyServer.doStart(JettyServer.java:65) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:520) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:365) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.mortbay.jetty.plugin.JettyRunMojo.execute(JettyRunMojo.java:523) [jetty-maven-plugin-8.1.16.v20140903.jar:8.1.16.v20140903]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:133) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:108) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:76) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:116) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:361) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:155) [maven-core-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:584) [maven-embedder-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:213) [maven-embedder-3.2.1.jar:3.2.1]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:157) [maven-embedder-3.2.1.jar:3.2.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_79]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_79]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_79]
+	at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_79]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415) [plexus-classworlds-2.5.1.jar:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356) [plexus-classworlds-2.5.1.jar:na]
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/SpringProperties
+	at org.springframework.beans.CachedIntrospectionResults.<clinit>(CachedIntrospectionResults.java:95) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getCachedIntrospectionResults(BeanWrapperImpl.java:321) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.getPropertyDescriptorInternal(BeanWrapperImpl.java:351) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.BeanWrapperImpl.isWritableProperty(BeanWrapperImpl.java:427) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1419) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1158) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:519) ~[spring-beans-3.2.9.RELEASE.jar:3.2.9.RELEASE]
+	... 53 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.SpringProperties
+	at org.codehaus.plexus.classworlds.strategy.SelfFirstStrategy.loadClass(SelfFirstStrategy.java:50) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.unsynchronizedLoadClass(ClassRealm.java:259) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:235) ~[na:na]
+	at org.codehaus.plexus.classworlds.realm.ClassRealm.loadClass(ClassRealm.java:227) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:430) ~[na:na]
+	at org.eclipse.jetty.webapp.WebAppClassLoader.loadClass(WebAppClassLoader.java:383) ~[na:na]
+	... 60 common frames omitted
